@@ -1,7 +1,7 @@
 # webpack-example
 
-## Demo 1
-Base example of webpack bundling multi entry application.
+## Demo 2
+Base example of webpack bundling single page application.
 ```
 Hash: 3e59a5639904080f0b7f
 Version: webpack 1.13.1

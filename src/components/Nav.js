@@ -1,3 +1,4 @@
+import "../assets/nav.css";
 import React, { PropTypes } from "react";
 
 function Nav ({ route, routes }) {

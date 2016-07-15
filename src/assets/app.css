@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    background-color: lightgray;
+}
+
+#app > div:not(.loading) {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#app main {
+    flex: 2 0 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#app main h1 {
+    width: 100%;
+    font-size: 10rem;
+    text-shadow: 0px 0px 2px #686868,
+    0px 1px 1px #ddd,
+    0px 2px 1px #d6d6d6,
+    0px 3px 1px #ccc,
+    0px 4px 1px #c5c5c5,
+    0px 5px 1px #c1c1c1,
+    0px 6px 1px #bbb,
+    0px 7px 1px #777,
+    0px 8px 3px rgba(100, 100, 100, 0.4),
+    0px 9px 5px rgba(100, 100, 100, 0.1),
+    0px 10px 7px rgba(100, 100, 100, 0.15),
+    0px 11px 9px rgba(100, 100, 100, 0.2),
+    0px 12px 11px rgba(100, 100, 100, 0.25),
+    0px 13px 15px rgba(100, 100, 100, 0.3);
+}
+
+.loading {
+    height: 100vh;
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: radial-gradient(white, transparent);
+}
+
+/*!
+ * Load Awesome v1.1.0 (http://github.danielcardoso.net/load-awesome/)
+ * Copyright 2015 Daniel Cardoso <@DanielCardoso>
+ * Licensed under MIT
+ */
+.la-ball-beat,
+.la-ball-beat > div {
+    position: relative;
+    box-sizing: border-box;
+}
+
+.la-ball-beat {
+    display: block;
+    font-size: 0;
+    color: #fff;
+}
+
+.la-ball-beat.la-dark {
+    color: #333;
+}
+
+.la-ball-beat > div {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
+}
+
+.la-ball-beat {
+    width: 54px;
+    height: 18px;
+}
+
+.la-ball-beat > div {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 100%;
+    animation: ball-beat .7s -.15s infinite linear;
+}
+
+.la-ball-beat > div:nth-child(2n-1) {
+    animation-delay: -.5s;
+}
+
+.la-ball-beat.la-sm {
+    width: 26px;
+    height: 8px;
+}
+
+.la-ball-beat.la-sm > div {
+    width: 4px;
+    height: 4px;
+    margin: 2px;
+}
+
+.la-ball-beat.la-2x {
+    width: 108px;
+    height: 36px;
+}
+
+.la-ball-beat.la-2x > div {
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+}
+
+.la-ball-beat.la-3x {
+    width: 162px;
+    height: 54px;
+}
+
+.la-ball-beat.la-3x > div {
+    width: 30px;
+    height: 30px;
+    margin: 12px;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-beat {
+    50% {
+        opacity: .2;
+        transform: scale(.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes ball-beat {
+    50% {
+        opacity: .2;
+        transform: scale(.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@-o-keyframes ball-beat {
+    50% {
+        opacity: .2;
+        transform: scale(.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes ball-beat {
+    50% {
+        opacity: .2;
+        transform: scale(.75);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

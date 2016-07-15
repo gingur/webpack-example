@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   context: path.join(__dirname, 'src'),
@@ -18,9 +19,13 @@ module.exports = {
       test: /\.jsx?/,
       include: path.resolve(__dirname, 'src'),
       loader: 'babel-loader'
+    }, {
+      test: /\.css$/,
+      loader: ExtractTextPlugin.extract('style-loader', 'css-loader?localIdentName=[name].[local].[hash:base64:5]')
     }]
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js')
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js'),
+    new ExtractTextPlugin('app.css')
   ]
 };

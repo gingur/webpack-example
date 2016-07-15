@@ -1,6 +1,6 @@
 # webpack-example
 
-## Demo 5
+## Demo 6
 Example of webpack bundling SPA with bundle loader and extracted CSS.
 ```
 Hash: 83f31b200dc23446bfb3

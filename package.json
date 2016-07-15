@@ -2,7 +2,7 @@
   "name": "webpack-example",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/home.js",
+  "main": "dist/app.js",
   "scripts": {
     "clean": "rimraf dist",
     "prebuild": "npm run clean",

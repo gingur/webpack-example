@@ -3,9 +3,7 @@ const path = require('path');
 module.exports = {
   context: path.join(__dirname, 'src'),
   entry: {
-    home: './home.js',
-    about: './about.js',
-    contact: './contact.js'
+    app: './app.js'
   },
   output: {
     path: path.join(__dirname, 'dist'),

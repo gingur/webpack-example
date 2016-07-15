@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Nav from "./components/Nav";
-import Home from "./components/Home";
 import routes from "./constants/routes";
 
 class Application extends React.Component {

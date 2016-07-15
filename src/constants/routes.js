@@ -3,18 +3,18 @@ export default {
     id: 'home',
     title: 'Home',
     href: '#home',
-    Component: require('../components/Home').default
+    load: require('bundle?lazy&name=home!../components/Home')
   },
   about: {
     id: 'about',
     title: 'About',
     href: '#about',
-    Component: require('../components/About').default
+    load: require('bundle?lazy&name=about!../components/About')
   },
   contact: {
     id: 'contact',
     title: 'Contact Us',
     href: '#contact',
-    Component: require('../components/Contact').default
+    load: require('bundle?lazy&name=contact!../components/Contact')
   }
 }

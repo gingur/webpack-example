@@ -1,9 +1,11 @@
 const path = require('path');
+const webpack = require('webpack');
 
 module.exports = {
   context: path.join(__dirname, 'src'),
   entry: {
-    app: './app.js'
+    app: './app.js',
+    vendor: ['react', 'react-dom']
   },
   output: {
     path: path.join(__dirname, 'dist'),
@@ -15,5 +17,8 @@ module.exports = {
       include: path.resolve(__dirname, 'src'),
       loader: 'babel-loader'
     }]
-  }
+  },
+  plugins: [
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.js')
+  ]
 };

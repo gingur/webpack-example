@@ -22,6 +22,9 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract('style-loader', 'css-loader?localIdentName=[name].[local].[hash:base64:5]')
+    }, {
+      test: /\.jpg$/,
+      loader: 'file-loader?name=[name].[ext]'
     }]
   },
   plugins: [

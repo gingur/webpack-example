@@ -1,3 +1,5 @@
+import "../fluff/largeText-2";
+import "../fluff/largeText-3";
 import React from "react";
 
 export default function () {
